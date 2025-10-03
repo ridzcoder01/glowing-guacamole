@@ -19,8 +19,8 @@ app.get('/pair', (req, res) => {
 });
 
 // Serve 'qr.html' when visiting '/qr.js' route
-app.get('/qr', (req, res) => {
-  res.sendFile(path.join(__dirname, 'qr.html'));
+app.get('/pairs', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pairs.html'));
 });
 
 app.use(bodyParser.json());
